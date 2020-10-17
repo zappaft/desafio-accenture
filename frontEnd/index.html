@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Nokia Tijolão</title>
+</head>
+<body>
+    <div id="box-tijolao">
+        <div id="box-title" class="fone">
+            <img id="tijolao" src="images/tijolao.png" class="fone"/>
+            <input type="hidden" name="code" id="code" value="">
+        </div>
+        <div id="box-teclas">
+            <section class="container flex">
+                <div class="item flex-item-1"><img src="images/teclas_01.png"></div>
+                <div class="item flex-item-1" onclick="digitar('2')"><img src="images/teclas_02.png"></div>
+                <div class="item flex-item-1" onclick="digitar('3')"><img src="images/teclas_03.png"></div>
+            </section>
+            <section class="container flex">
+                <div class="item flex-item-1" onclick="digitar('4')"><img src="images/teclas_04.png"></div>
+                <div class="item flex-item-1" onclick="digitar('5')"><img src="images/teclas_05.png"></div>
+                <div class="item flex-item-1" onclick="digitar('6')"><img src="images/teclas_06.png"></div>
+            </section>
+            <section class="container flex">
+                <div class="item flex-item-1" onclick="digitar('7')"><img src="images/teclas_07.png"></div>
+                <div class="item flex-item-1" onclick="digitar('8')"><img src="images/teclas_08.png"></div>
+                <div class="item flex-item-1" onclick="digitar('9')"><img src="images/teclas_09.png"></div>
+            </section>
+            <section class="container flex">
+                <div class="item flex-item-1" onclick="limpar()"><img src="images/asterisco.png"></div>
+                <div class="item flex-item-1" onclick="digitar('1')"><img src="images/zero.png"></div>
+                <div class="item flex-item-1" onclick="ok('')"><img src="images/hashtag.png"></div>
+            </section>
+
+        </div>
+
+    </div>
+   <script src="code.js"></script>
+</body>
+</html>

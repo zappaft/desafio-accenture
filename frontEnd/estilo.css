@@ -1,0 +1,76 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+}
+
+.container {
+	max-width: 400px;
+	margin: 0 auto;
+    border: 1px solid #ccc;
+    background: #b3b3b3;
+}
+
+/* Flex */
+.flex {
+	display: flex;
+}
+
+.flex-wrap {
+	flex-wrap: wrap;
+}
+
+.flex-item-1 {
+	flex: 1;
+}
+
+/* Flex Item */
+.item {
+	margin: 5px;
+	background:gray;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+.item:active{
+    transform: scale(0.95);
+}
+
+.container {
+	max-width: 400px;
+	margin: 0 auto;
+	border: 1px solid #ccc;
+}
+
+h1 {
+	text-align: center;
+	margin: 20px 0 0 0;
+	font-size: 1.25em;
+    font-weight: normal;
+}
+
+body {
+	font-family: monospace;
+	color: #757575;
+}
+
+.box-title{
+    background-image: url('images/tijolao.png');
+
+}
+
+.box-teclas{
+    background-color: grey;
+}
+.texto{
+    position: absolute;
+}
+
+.fone{
+    position: relative;
+     
+}
