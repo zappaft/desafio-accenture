@@ -2,7 +2,8 @@ module.exports = {
 
     execute(codigo) {
         // codigo é a string com todos números
-        const codigo_num = codigo.split('0');
+
+        const codigo_num = codigo.split(' ');
         var palavra = '';
         codigo_num.forEach(function (lista) {
             switch (lista[0]) {
@@ -29,6 +30,9 @@ module.exports = {
                     break;
                 case '9':
                     palavra += ['w', 'x', 'y', 'z'][lista.length - 1]
+                    break;
+                case '0':
+                    palavra += [' ']
                     break;
                 default:
                     //invalido

@@ -7,7 +7,7 @@ const app = express();
 
 const port = 3000;
 
-const { TraducaoService } = require('./service/TraducaoService');
+const TraducaoService = require('./service/TraducaoService');
 
 
 app.get('/', (req, res) => {
@@ -17,8 +17,8 @@ app.get('/', (req, res) => {
 
 app.get('/traduzir/:codigo', (req, res) => {
     const { codigo } = req.params;
-    const traducaoService = new TraducaoService();
-    res.send(traducaoService.execute(codigo));
+
+    res.send(TraducaoService.execute(codigo));
 })
 
 app.listen(port, () => {
