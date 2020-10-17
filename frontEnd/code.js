@@ -1,20 +1,26 @@
 let inputCode = document.getElementById("code");
 let tela = document.getElementById("box-title");
+let resultado = document.getElementById("resultado");
 let telefone = document.getElementById("tijolao");
-function digitar(valor){
+let bgTijolao = document.getElementById("bgTijolao");
+function digitar(valor) {
 
-    inputCode.value+= valor;
+    inputCode.value += valor;
 
 }
 
-function ok(){
+function ok() {
 
-   //inputCode.classList.add('texto');
+    let http = new XMLHttpRequest();
 
-
-   tela.innerHTML =  tela.innerHTML + `<h1>ACCENTURE</h1>`;
+    http.open("GET", traducaoURL + inputCode.value, true);
+    http.send(null);
+    console.log(http.response);
+    tela.innerHTML = tela.innerHTML + `<p class='texto'>${http.response}</p>`;
+    //resultado.innerHTML = "<p class='texto'>ACCENTURE</p>";
 }
 
-function limpar(){
+
+function limpar() {
     inputCode.value = "";
 }
