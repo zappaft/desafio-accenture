@@ -41,7 +41,7 @@ module.exports = {
                     break;
             }
         })
-
+        console.log(palavra);
         return palavra;
     }
 }

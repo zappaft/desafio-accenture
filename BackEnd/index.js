@@ -4,6 +4,8 @@ const cors = require('cors');
 
 const app = express();
 app.use(cors());
+app.use(express.json());
+
 const port = 3000;
 
 const TraducaoService = require('./service/TraducaoService');
@@ -17,7 +19,7 @@ app.get('/', (req, res) => {
 app.get('/traduzir/:codigo', (req, res) => {
     const { codigo } = req.params;
 
-    res.send(TraducaoService.execute(codigo));
+    res.json({ 'palavra': TraducaoService.execute(codigo) });
 })
 
 app.listen(port, () => {
