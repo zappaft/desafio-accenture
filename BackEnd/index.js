@@ -1,4 +1,5 @@
 const express = require('express');
+const { request } = require('express');
 
 const app = express();
 
@@ -9,8 +10,11 @@ app.get('/', (req, res) => {
 })
 
 
-app.get('/traduzir', (req, res) => {
-    res.send("Servidor Ativo!")
+app.get('/traduzir/:codigo', (req, res) => {
+    const { codigo } = req.params;
+
+    const traducao = codigo;
+    res.send(traducao);
 })
 
 app.listen(port, () => {
