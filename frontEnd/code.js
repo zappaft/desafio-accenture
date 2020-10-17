@@ -23,8 +23,8 @@ async function ok() {
         tela.innerHTML =
             tela.innerHTML + `<p class='texto'>${palavra}</p>`;
     }));
-}
 
+}
 
 function limpar() {
     inputCode.value = "";
