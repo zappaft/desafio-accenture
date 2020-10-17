@@ -1,4 +1,4 @@
-class TraducaoService {
+module.exports = {
 
     execute(codigo) {
         // codigo é a string com todos números
@@ -38,8 +38,5 @@ class TraducaoService {
 
         return palavra;
     }
-
-
-
 }
-module.exports = TraducaoService;
+
