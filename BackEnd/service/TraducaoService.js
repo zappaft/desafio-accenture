@@ -42,5 +42,4 @@ class TraducaoService {
 
 
 }
-
-export default TraducaoService;
+module.exports = TraducaoService;
