@@ -3,7 +3,9 @@ module.exports = {
     execute(codigo) {
         // codigo é a string com todos números
 
-        const codigo_num = codigo.split(' ');
+        const codigo_num = codigo.split('1');
+
+        console.log(codigo_num);
         var palavra = '';
         codigo_num.forEach(function (lista) {
             switch (lista[0]) {
@@ -32,7 +34,7 @@ module.exports = {
                     palavra += ['w', 'x', 'y', 'z'][lista.length - 1]
                     break;
                 case '0':
-                    palavra += [' ']
+                    palavra += ' ';
                     break;
                 default:
                     //invalido
